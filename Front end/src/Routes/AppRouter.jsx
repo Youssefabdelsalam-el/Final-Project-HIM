@@ -1,0 +1,35 @@
+import { Routes, Route } from "react-router-dom";
+import Mainlayout from '../Layout/Mainlayout'
+import HomePage from "../Pages/HomePage";
+import Aboutpage from "../Pages/Aboutpage";
+import LoginPage from "../Pages/LoginPage";
+import DashbordStoudentPage from "../Pages/DashbordStoudentPage";
+import Home from "../Components/DashbordStudent/Home";
+import Profile from "../Components/DashbordStudent/Profile";
+import MainIngredient from "../Components/DashbordStudent/MainIngredient";
+import CoursesList from "../Components/DashbordStudent/Courses/CoursesList";
+import Lectures from "../Components/DashbordStudent/Lectures/Lectures";
+import Assignment from "../Components/DashbordStudent/Assignments/Assignment";
+
+export default function AppRouter() {
+  return (
+    <>
+    <Routes>
+      <Route path="/" element={<Mainlayout/>}>
+        <Route index element={<HomePage/>} />
+        <Route path="about" element={<Aboutpage/>}></Route>
+        <Route path="login" element={<LoginPage/>}></Route>
+      </Route>
+      <Route path="Dashbord Student" element={<MainIngredient/>}>
+      <Route index element={<Home/>} />
+      <Route path="profile" element={<Profile/>} />
+      <Route path="Courses" element={<CoursesList/>} />
+      <Route path="Lectures" element={<Lectures/>} />
+      <Route path="Assignment" element={<Assignment/>} />
+        
+      
+      </Route>
+    </Routes>
+    </>
+  )
+}
