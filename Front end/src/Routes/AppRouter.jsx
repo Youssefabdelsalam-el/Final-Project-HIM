@@ -10,6 +10,9 @@ import MainIngredient from "../Components/DashbordStudent/MainIngredient";
 import CoursesList from "../Components/DashbordStudent/Courses/CoursesList";
 import Lectures from "../Components/DashbordStudent/Lectures/Lectures";
 import Assignment from "../Components/DashbordStudent/Assignments/Assignment";
+import Settings from "../Components/DashbordStudent/Setting/Settings";
+import Advertisement from "../Components/DashbordStudent/Advertisements/Advertisement";
+import AttendanceTracker from "../Components/DashbordStudent/AttendanceTracker/AttendanceTracker";
 
 export default function AppRouter() {
   return (
@@ -20,14 +23,18 @@ export default function AppRouter() {
         <Route path="about" element={<Aboutpage/>}></Route>
         <Route path="login" element={<LoginPage/>}></Route>
       </Route>
+
       <Route path="Dashbord Student" element={<MainIngredient/>}>
-      <Route index element={<Home/>} />
-      <Route path="profile" element={<Profile/>} />
-      <Route path="Courses" element={<CoursesList/>} />
-      <Route path="Lectures" element={<Lectures/>} />
-      <Route path="Assignment" element={<Assignment/>} />
-        
       
+        <Route index element={<Home/>} />
+        <Route path="profile" element={<Profile/>} />
+        <Route path="Courses" element={<CoursesList/>} />
+        <Route path="Lectures" element={<Lectures/>} />
+        <Route path="Assignment" element={<Assignment/>} />
+        <Route path="Settings" element={<Settings/>} />
+        <Route path="Advertisement" element={<Advertisement/>} />
+        <Route path="AttendanceTracker" element={<AttendanceTracker/>} />
+
       </Route>
     </Routes>
     </>

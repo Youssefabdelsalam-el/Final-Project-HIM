@@ -1,10 +1,9 @@
 import React from 'react'
-import { BsBarChart } from 'react-icons/bs'
 import { FaRegBell } from 'react-icons/fa'
 import { GoVideo } from 'react-icons/go'
 import { IoIosLogOut } from 'react-icons/io'
-import { IoMegaphoneOutline } from 'react-icons/io5'
-import { LuClipboardList, LuTable, LuUsersRound } from 'react-icons/lu'
+import { IoMegaphoneOutline, IoSettingsOutline } from 'react-icons/io5'
+import { LuClipboardList, LuClipboardPen, LuTable, LuUsersRound } from 'react-icons/lu'
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiBookShelfLine } from 'react-icons/ri'
 import { CgProfile } from 'react-icons/cg'
@@ -142,47 +141,44 @@ export default function MainIngredient() {
 
         {/* List item */}
         <li>
+          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="AttendanceTracker">
           <button className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
             {/* Home icon */}
             <LuUsersRound   className="my-1.5 inline-block size-4" />
             <span className="is-drawer-close:hidden cursor-pointer">الحضور والغياب</span>
           </button>
+          </Link>
         </li> 
 
         {/* List item */}
         <li>
           <button className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
             {/* Home icon */}
-            <BsBarChart   className="my-1.5 inline-block size-4" />
-            <span className="is-drawer-close:hidden cursor-pointer">النتائج</span>
+            <LuClipboardPen   className="my-1.5 inline-block size-4" />
+            <span className="is-drawer-close:hidden cursor-pointer">الاختبارات</span>
           </button>
         </li> 
 
         {/* List item */}
         <li>
-          <button className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
+          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="Advertisement">
+          <button className="flex items-center gap-2 hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
             {/* Home icon */}
-            <IoMegaphoneOutline   className="my-1.5 inline-block size-4" />
+            <IoMegaphoneOutline className="my-1.5 inline-block size-4" />
             <span className="is-drawer-close:hidden cursor-pointer">الاعلانات</span>
           </button>
-        </li> 
-
-        {/* List item */} 
-        <li>
-          <button className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
-            {/* Home icon */}
-            <MdOutlineEmail   className="my-1.5 inline-block size-4" />
-            <span className="is-drawer-close:hidden cursor-pointer">الرسائل</span>
-          </button>
+          </Link>
         </li> 
 
         {/* List item */}
         <li>
-          <button className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Settings">
+          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="Settings">
+          <button className="flex items-center gap-2 hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Settings">
             {/* Settings icon */}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+            <IoSettingsOutline className="my-1.5 inline-block size-4" />
             <span className="is-drawer-close:hidden cursor-pointer">الاعدادات</span>
           </button>
+          </Link>
         </li>
 
         {/* List item */}

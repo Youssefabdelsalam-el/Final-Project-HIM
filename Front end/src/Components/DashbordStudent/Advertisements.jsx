@@ -21,7 +21,7 @@ export default function Advertisements() {
                     </div>
                 </div>
 
-                <div className='self-end sm:self-auto flex flex-col items-center justify-center min-w-[60px] border border-gray-200 rounded-lg py-2 px-3 '>
+                <div className='self-end sm:self-auto flex flex-col items-center justify-center min-w-15 border border-gray-200 rounded-lg py-2 px-3 '>
                     <p className='text-lg md:text-xl font-bold'>18</p>
                     <p className="text-xs md:text-sm text-gray-500">مايو</p>
                 </div>
@@ -40,7 +40,7 @@ export default function Advertisements() {
                     </div>
                 </div>
 
-                <div className='self-end sm:self-auto flex flex-col items-center justify-center min-w-[60px] border border-gray-200 rounded-lg py-2 px-3 '>
+                <div className='self-end sm:self-auto flex flex-col items-center justify-center min-w-15 border border-gray-200 rounded-lg py-2 px-3 '>
                     <p className='text-lg md:text-xl font-bold'>16</p>
                     <p className="text-xs md:text-sm text-gray-500">مايو</p>
                 </div>
@@ -59,7 +59,7 @@ export default function Advertisements() {
                     </div>
                 </div>
 
-                <div className='self-end sm:self-auto flex flex-col items-center justify-center min-w-[60px] border border-gray-200 rounded-lg py-2 px-3 '>
+                <div className='self-end sm:self-auto flex flex-col items-center justify-center min-w-15 border border-gray-200 rounded-lg py-2 px-3 '>
                     <p className='text-lg md:text-xl font-bold'>15</p>
                     <p className="text-xs md:text-sm text-gray-500">مايو</p>
                 </div>
