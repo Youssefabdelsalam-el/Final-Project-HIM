@@ -30,7 +30,7 @@ export default function ChangePassword() {
             <div className='flex items-center gap-3 border border-[#E4EAF3] bg-white h-11 px-3 rounded-xl shadow-sm focus-within:border-[#0057D9] focus-within:ring-2 focus-within:ring-[#0057D9]/10 transition-all'>
                 <CiLock className='text-[#0057D9] w-5 h-5 shrink-0' />
     
-                <input className='w-full h-full outline-none text-sm text-[#0B1F4D]' type="Password" />
+                <input className='w-full h-full outline-none text-sm text-[#0B1F4D]' type="Password" placeholder='*******' />
             </div>
         </div>
     
@@ -41,7 +41,7 @@ export default function ChangePassword() {
             <div className='flex items-center gap-3 border border-[#E4EAF3] bg-white h-11 px-3 rounded-xl shadow-sm focus-within:border-[#0057D9] focus-within:ring-2 focus-within:ring-[#0057D9]/10 transition-all'>
                 <CiLock className='text-[#0057D9] w-5 h-5 shrink-0' />
     
-                <input className='w-full h-full outline-none text-sm text-[#0B1F4D]' type="Password" />
+                <input className='w-full h-full outline-none text-sm text-[#0B1F4D]' type="Password" placeholder='*******' />
             </div>
         </div>
     
@@ -52,7 +52,7 @@ export default function ChangePassword() {
             <div className='flex items-center gap-3 border border-[#E4EAF3] bg-white h-11 px-3 rounded-xl shadow-sm focus-within:border-[#0057D9] focus-within:ring-2 focus-within:ring-[#0057D9]/10 transition-all'>
                 <CiLock className='text-[#0057D9] w-5 h-5 shrink-0' />
     
-                <input className='w-full h-full outline-none text-sm text-[#0B1F4D]' type="Password"/>
+                <input className='w-full h-full outline-none text-sm text-[#0B1F4D]' type="Password" placeholder='*******'/>
             </div>
         </div>
     

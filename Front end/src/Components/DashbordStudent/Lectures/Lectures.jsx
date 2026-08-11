@@ -16,7 +16,7 @@ export default function Lectures() {
         <Select/>
       </div>
       
-      <div className='w-full min-w-0 border rounded-2xl border-[#b3b3b37e] p-2 sm:p-3 md:p-4 overflow-hidden'>
+      <div className='w-full min-w-0 border rounded-2xl border-[#b3b3b37e] overflow-hidden'>
 
         <ul className="list bg-base-100 rounded-3xl shadow-md">
           

@@ -10,7 +10,7 @@ export default function AttendanceTracker() {
   return (
     <div className='flex flex-col gap-7'>
         <div className='profile flex items-center gap-3'>
-            <div className='bg-[#EAF2FF] text-[#0B1F4D] p-3 rounded-full'>
+            <div className='bg-[#EAF2FF] text-[#0057D9] p-3 rounded-full'>
                 <LuUsersRound className='w-9 h-9'  />
             </div>
                     

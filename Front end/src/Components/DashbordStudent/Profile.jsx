@@ -68,7 +68,7 @@ export default function Profile() {
         {/* كود الطالب */}
         <CardProfile title="كود الطالب" Icon={FaIdCard} Information="202612345"  />
         {/* التخصص*/}
-        <CardProfile title="التحصص" Icon={FaGraduationCap} Information="نظم ومعلومات الاعمال"  />
+        <CardProfile title="التخصص" Icon={FaGraduationCap} Information="نظم ومعلومات الاعمال"  />
         {/* الفرقة*/}
         <CardProfile title="الفرقة" Icon={MdPeopleAlt} Information="الثالثة"  />
         {/* العام الدراسي*/}

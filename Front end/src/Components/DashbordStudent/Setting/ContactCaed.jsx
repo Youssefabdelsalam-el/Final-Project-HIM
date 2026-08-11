@@ -39,7 +39,7 @@ export default function ContactCaed() {
 
           <input
             className='w-full h-full outline-none text-sm text-[#0B1F4D]'
-            type="emali"
+            type="emali" placeholder='ttu21@gmail.com'
           />
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function ContactCaed() {
 
           <input
             className='w-full h-full outline-none text-sm text-[#0B1F4D]'
-            type="text"
+            type="text" placeholder='*********01'
           />
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function ContactCaed() {
 
           <input
             className='w-full h-full outline-none text-sm text-[#0B1F4D]'
-            type="text"
+            type="text" placeholder='المحافظة - المنطقة'
           />
         </div>
       </div>

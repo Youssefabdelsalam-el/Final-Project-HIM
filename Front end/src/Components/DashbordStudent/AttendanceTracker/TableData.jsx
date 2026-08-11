@@ -6,7 +6,7 @@ export default function TableData() {
         <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
   <table className="table">
     {/* head */}
-    <thead>
+    <thead className='bg-gray-200 text-[18px] text-black font-bold'>
       <tr>
         <th>#</th>
         <th>المادة</th>
@@ -16,28 +16,31 @@ export default function TableData() {
         <th>الحالة</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className='text-[15px] font-bold'>
       {/* row 1 */}
       <tr>
         <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>تصميم مواقع</td>
+        <td>10/8/2026</td>
+        <td>الاتنين</td>
+        <td>10:00 AM</td>
+        <td>
+          <span className='bg-green-200 px-4 rounded-2xl'>حاضر</span>
+        </td>
       </tr>
+
       {/* row 2 */}
       <tr>
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
+        <th>1</th>
+        <td>تصميم مواقع</td>
+        <td>10/8/2026</td>
+        <td>الاتنين</td>
+        <td>10:00 AM</td>
+        <td>
+          <span className='bg-red-200 px-4 rounded-2xl'>غائب</span>
+        </td>
       </tr>
-      {/* row 3 */}
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
+      
     </tbody>
   </table>
 </div>

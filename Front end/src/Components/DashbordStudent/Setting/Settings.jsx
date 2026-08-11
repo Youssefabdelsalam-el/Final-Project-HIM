@@ -9,7 +9,7 @@ export default function Settings() {
      <div className='flex flex-col gap-7'>
         <div className='flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 lg:gap-0 w-full'>
             <div className='profile flex items-center gap-3'>
-                <div className='bg-[#EAF2FF] text-[#0B1F4D] p-3 rounded-full'>
+                <div className='bg-[#EAF2FF] text-[#0057D9] p-3 rounded-full'>
                     <IoMdSettings className='w-9 h-9'  />
                 </div>
     

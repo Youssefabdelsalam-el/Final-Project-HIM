@@ -13,6 +13,9 @@ import Assignment from "../Components/DashbordStudent/Assignments/Assignment";
 import Settings from "../Components/DashbordStudent/Setting/Settings";
 import Advertisement from "../Components/DashbordStudent/Advertisements/Advertisement";
 import AttendanceTracker from "../Components/DashbordStudent/AttendanceTracker/AttendanceTracker";
+import ClassSchedule from "../Components/DashbordStudent/ClassSchedule/ClassSchedule";
+import Tests from "../Components/DashbordStudent/Tests/Tests";
+import DoctorDrawer from "../Components/DashbordDoctor/DoctorDrawer";
 
 export default function AppRouter() {
   return (
@@ -25,7 +28,6 @@ export default function AppRouter() {
       </Route>
 
       <Route path="Dashbord Student" element={<MainIngredient/>}>
-      
         <Route index element={<Home/>} />
         <Route path="profile" element={<Profile/>} />
         <Route path="Courses" element={<CoursesList/>} />
@@ -34,7 +36,13 @@ export default function AppRouter() {
         <Route path="Settings" element={<Settings/>} />
         <Route path="Advertisement" element={<Advertisement/>} />
         <Route path="AttendanceTracker" element={<AttendanceTracker/>} />
+        <Route path="ClassSchedule" element={<ClassSchedule/>} />
+        <Route path="Tests" element={<Tests/>} />
+      </Route>
 
+      <Route path="Dashbord Doctor" element={<DoctorDrawer/>}>
+      
+      
       </Route>
     </Routes>
     </>

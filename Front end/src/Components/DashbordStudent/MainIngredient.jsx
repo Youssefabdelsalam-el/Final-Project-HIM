@@ -57,7 +57,7 @@ export default function MainIngredient() {
      </div>
     </nav>
     {/* Page content here */}
-    <div className="p-4 bg-[#F5F7FA]">
+    <div className="p-4 bg-[#F5F7FA] min-h-screen flex flex-col justify-between">
 
       <main>
         <Outlet />
@@ -97,7 +97,7 @@ export default function MainIngredient() {
 
         {/* List item */}
         <li>
-          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="">
+          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="ClassSchedule">
           <button className="flex items-center gap-2 hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
             {/* Home icon */}
             <LuTable className="my-1.5 inline-block size-4" />
@@ -152,11 +152,13 @@ export default function MainIngredient() {
 
         {/* List item */}
         <li>
-          <button className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
+          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="Tests">
+          <button className="flex items-center gap-2 hover:bg-[#041c50] hover:text-white active:bg-[#002079]" data-tip="Homepage">
             {/* Home icon */}
-            <LuClipboardPen   className="my-1.5 inline-block size-4" />
+            <LuClipboardPen  className="my-1.5 inline-block size-4" />
             <span className="is-drawer-close:hidden cursor-pointer">الاختبارات</span>
           </button>
+          </Link>
         </li> 
 
         {/* List item */}
