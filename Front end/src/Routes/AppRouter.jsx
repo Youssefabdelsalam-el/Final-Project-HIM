@@ -16,6 +16,7 @@ import AttendanceTracker from "../Components/DashbordStudent/AttendanceTracker/A
 import ClassSchedule from "../Components/DashbordStudent/ClassSchedule/ClassSchedule";
 import Tests from "../Components/DashbordStudent/Tests/Tests";
 import DoctorDrawer from "../Components/DashbordDoctor/DoctorDrawer";
+import HomeDoctor from "../Components/DashbordDoctor/Home/Home";
 
 export default function AppRouter() {
   return (
@@ -41,7 +42,7 @@ export default function AppRouter() {
       </Route>
 
       <Route path="Dashbord Doctor" element={<DoctorDrawer/>}>
-      
+      <Route index element={<HomeDoctor/>} />
       
       </Route>
     </Routes>
