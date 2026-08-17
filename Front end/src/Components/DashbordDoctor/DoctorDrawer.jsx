@@ -67,15 +67,7 @@ export default function DoctorDrawer() {
       {/* Sidebar content here */}
       <ul className="menu w-full grow">
         {/* List item */}
-        <li>
-          <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="">
-            <button className='flex items-center gap-2' data-tip="Homepage">
-            {/* Home icon */}
-            <CgProfile className="my-1.5 inline-block size-4"  />
-          <span className="is-drawer-close:hidden cursor-pointer">الملف الشخصي</span>
-          </button>
-          </Link>
-        </li>
+       
 
         {/* List item */}
         <li>

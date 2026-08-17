@@ -12,7 +12,7 @@ export default function StatsCard({num,name,description,Icon,namelink,styleicon}
             <p className='text-[#868686] text-sm'>{description}</p>
         </div>
          <div className={styleicon}>
-            <Icon className='w-10 h-10' />
+            <Icon className='w-10 h-10'/>
          </div>
        </div>
 
