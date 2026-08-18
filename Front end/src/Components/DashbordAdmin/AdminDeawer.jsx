@@ -1,6 +1,8 @@
 import React from 'react'
+import { AiOutlineHome } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { FaRegBell } from 'react-icons/fa'
+import { PiStudentDuotone } from 'react-icons/pi'
 import { Link, Outlet } from 'react-router-dom'
 
 export default function AdminDeawer() {
@@ -71,8 +73,18 @@ export default function AdminDeawer() {
               <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="">
                 <button className='flex items-center gap-2' data-tip="Homepage">
                 {/* Home icon */}
-                <CgProfile className="my-1.5 inline-block size-4"  />
+                <AiOutlineHome className="my-1.5 inline-block size-4"  />
               <span className="is-drawer-close:hidden cursor-pointer"> الرئيسية</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="Students">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                {/* Home icon */}
+                <PiStudentDuotone  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> الطلاب</span>
               </button>
               </Link>
             </li>

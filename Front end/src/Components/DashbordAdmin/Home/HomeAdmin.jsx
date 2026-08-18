@@ -17,11 +17,11 @@ export default function HomeAdmin() {
             {/* الترحيب */}
             <div className='Hello flex flex-col gap-2 min-w-0'>
         
-            <div className='flex flex-wrap items-center gap-2 text-[25px] font-bold'>
-                <h1>مرحبا بك</h1>
-                <p>Admin</p>
-            </div>
-            <p>اليك ملخص شامل لنشاط المعهد اليوم.</p>
+                <div className='flex flex-wrap items-center gap-2 text-[25px] font-bold'>
+                    <h1>مرحبا بك</h1>
+                    <p>Admin</p>
+                </div>
+                <p>اليك ملخص شامل لنشاط المعهد اليوم.</p>
             </div>
         
             {/* التارخ */}

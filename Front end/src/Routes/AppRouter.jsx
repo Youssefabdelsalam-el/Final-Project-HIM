@@ -19,6 +19,7 @@ import DoctorDrawer from "../Components/DashbordDoctor/DoctorDrawer";
 import HomeDoctor from "../Components/DashbordDoctor/Home/Home";
 import AdminDeawer from "../Components/DashbordAdmin/AdminDeawer";
 import HomeAdmin from "../Components/DashbordAdmin/Home/HomeAdmin";
+import Students from "../Components/DashbordAdmin/Students/Students";
 
 export default function AppRouter() {
   return (
@@ -54,7 +55,7 @@ export default function AppRouter() {
 
       <Route path="Dashbord Admin" element={<AdminDeawer/>}>
       <Route index element={<HomeAdmin/>} />
-
+      <Route path="Students" element={<Students/>} />
       
       </Route>
     </Routes>
