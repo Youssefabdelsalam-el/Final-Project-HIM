@@ -1,13 +1,17 @@
 import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
 import { GoUpload } from 'react-icons/go'
-import { IoIosArrowBack } from 'react-icons/io'
+import { IoIosArrowBack, IoIosCheckbox } from 'react-icons/io'
 import { IoArrowUpSharp } from 'react-icons/io5'
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
+import { MdOutlineFileUpload, MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import SearchStudent from './SearchStudent'
 import Filter from './Filter'
 import TableStudent from './TableStudent'
+import { FiSearch } from 'react-icons/fi'
+import Upgradebutton from './Upgradebutton'
+import ImportStudentsButton from './ImportStudentsButton'
+import CreateStudent from './CreateStudent'
 
 export default function Students() {
   return (
@@ -27,20 +31,11 @@ export default function Students() {
             {/* الاجراءات */}
             <div className='flex items-center gap-3'>
 
-                <button className='group flex items-center gap-2 py-3 px-4 border border-blue-600 rounded-2xl cursor-pointer hover:bg-blue-600 hover:text-white font-bold'>
-                    <IoArrowUpSharp className='w-5 h-5 text-blue-600 group-hover:text-white' />
-                     ترقية الطلاب
-                </button>
+                <Upgradebutton/>
 
-                <button className='group flex items-center gap-2 py-3 px-4 border border-blue-600 rounded-2xl cursor-pointer hover:bg-blue-600 hover:text-white font-bold'>
-                    <GoUpload className='w-5 h-5 text-blue-600 group-hover:text-white' />
-                 استيراد الطلاب
-                </button>
+                <ImportStudentsButton/>
 
-                <button className='group flex items-center gap-2 py-3 px-4 border border-blue-600 rounded-2xl  cursor-pointer bg-blue-600 text-white hover:bg-white hover:text-black font-bold '>
-                    <GoUpload className='w-5 h-5 text-white group-hover:text-blue-600 ' />
-                 انشاء طالب
-                </button>
+                <CreateStudent/>
             </div>
         </div>
 

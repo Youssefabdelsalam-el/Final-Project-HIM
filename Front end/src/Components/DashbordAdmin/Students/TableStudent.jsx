@@ -3,6 +3,9 @@ import { AiOutlineEdit } from 'react-icons/ai'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { IoEyeOutline, IoPeople } from 'react-icons/io5'
 import { RiDeleteBinLine } from 'react-icons/ri'
+import StudentDetailsModal from './StudentDetailsModal'
+import EditStudentModal from './EditStudentModal'
+import DeleteStudentModal from './DeleteStudentModal'
 
 export default function TableStudent() {
   return (
@@ -37,17 +40,10 @@ export default function TableStudent() {
                     <td>الفرقة الثالثة</td>
                     <td>
                         <div className='flex items-center gap-3'>
-                           <button className='text-blue-600 border-blue-200 shadow border p-1 cursor-pointer hover:bg-gray-300 '>
-                             <IoEyeOutline className='w-6 h-6' />
-                           </button>
+                           <StudentDetailsModal/>
 
-                           <button className='text-blue-600 border-blue-200 shadow border p-1 cursor-pointer hover:bg-gray-300 '>
-                             <AiOutlineEdit className='w-6 h-6' />
-                           </button>
-
-                           <button className='text-red-600 border-red-200 shadow border p-1 cursor-pointer hover:bg-gray-300 '>
-                             <RiDeleteBinLine className='w-6 h-6' />
-                           </button>
+                           <EditStudentModal/>
+                           <DeleteStudentModal/>
                         </div>
                     </td>
                 </tr>
