@@ -14,7 +14,7 @@ export default function ImportStudentsButton() {
         </button>
 
         <dialog id="my_modal_2" className="modal">
-            <div className="modal-box w-7/12 max-w-4xl min-h-160  flex flex-col gap-5 py-10">
+            <div className="modal-box w-11/12 sm:w-10/12 max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col gap-5 py-6 sm:py-10">
             <form method="dialog">
                 {/* if there is a button in form, it will close the modal */}
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -51,7 +51,7 @@ export default function ImportStudentsButton() {
                 <p></p>
             </div>
 
-            <div className='flex items-center gap-4'>
+            <div className='flex flex-wrap items-center gap-3'>
                 <button className='py-3 px-7 bg-blue-600 hover:bg-blue-700 cursor-pointer text-white rounded-2xl '>استيراد</button>
                 <form method="dialog">
                     <button className='border border-gray-300 text-gray-700 hover:bg-gray-100 font-bold py-2.5 px-6 rounded-xl transition-all text-sm'>

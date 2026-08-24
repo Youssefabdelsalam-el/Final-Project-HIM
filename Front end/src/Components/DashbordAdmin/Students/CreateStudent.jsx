@@ -12,7 +12,7 @@ export default function CreateStudent() {
          انشاء طالب
     </button>
     <dialog id="my_modal_3" className="modal">
-        <div className="modal-box w-7/12 max-w-4xl min-h-160  flex flex-col gap-5 py-10">
+        <div className="modal-box w-11/12 sm:w-10/12 max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col gap-5 py-6 sm:py-10">
             <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -29,32 +29,32 @@ export default function CreateStudent() {
             <form className='flex flex-col gap-4'>
                 
                 {/* الاسم بالكامل */}
-                <div className='flex items-center justify-between gap-4'>
-                    <label className='w-1/4 font-semibold text-gray-700 text-sm'>الاسم بالكامل <span className='text-red-500'>*</span></label>
+                <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4'>
+                    <label className='w-full sm:w-1/4 font-semibold text-gray-700 text-sm'>الاسم بالكامل <span className='text-red-500'>*</span></label>
                     <div className='bg-white p-2.5 flex-1 border border-gray-300 rounded-lg focus-within:border-blue-500 transition-all'>
                         <input className='w-full outline-none text-sm text-gray-800' type="text" placeholder='الاسم بالكامل' />
                     </div>
                 </div>
 
                 {/* الرقم القومي */}
-                <div className='flex items-center justify-between gap-4'>
-                    <label className='w-1/4 font-semibold text-gray-700 text-sm'>الرقم القومي <span className='text-red-500'>*</span></label>
+                <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4'>
+                    <label className='w-full sm:w-1/4 font-semibold text-gray-700 text-sm'>الرقم القومي <span className='text-red-500'>*</span></label>
                     <div className='bg-white p-2.5 flex-1 border border-gray-300 rounded-lg focus-within:border-blue-500 transition-all'>
                         <input className='w-full outline-none text-sm text-gray-800' type="text" placeholder='الرقم القومي' />
                     </div>
                 </div>
 
                 {/* كود الطالب */}
-                <div className='flex items-center justify-between gap-4'>
-                    <label className='w-1/4 font-semibold text-gray-700 text-sm'>كود الطالب <span className='text-red-500'>*</span></label>
+                <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4'>
+                    <label className='w-full sm:w-1/4 font-semibold text-gray-700 text-sm'>كود الطالب <span className='text-red-500'>*</span></label>
                     <div className='bg-white p-2.5 flex-1 border border-gray-300 rounded-lg focus-within:border-blue-500 transition-all'>
                         <input className='w-full outline-none text-sm text-gray-800' type="text" placeholder='كود الطالب' />
                     </div>
                 </div>
 
                 {/* التخصص */}
-                <div className='flex items-center justify-between gap-4'>
-                    <label className='w-1/4 font-semibold text-gray-700 text-sm'>التخصص <span className='text-red-500'>*</span></label>
+                <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4'>
+                    <label className='w-full sm:w-1/4 font-semibold text-gray-700 text-sm'>التخصص <span className='text-red-500'>*</span></label>
                     <div className='bg-white p-2.5 flex-1 border border-gray-300 rounded-lg focus-within:border-blue-500 transition-all'>
                         <select className='w-full outline-none bg-transparent text-sm text-gray-700 cursor-pointer'>
                             <option value="" disabled selected>اختر التخصص</option>
@@ -67,8 +67,8 @@ export default function CreateStudent() {
                 </div>
 
                 {/* الفرقة */}
-                <div className='flex items-center justify-between gap-4'>
-                    <label className='w-1/4 font-semibold text-gray-700 text-sm'>الفرقة <span className='text-red-500'>*</span></label>
+                <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4'>
+                    <label className='w-full sm:w-1/4 font-semibold text-gray-700 text-sm'>الفرقة <span className='text-red-500'>*</span></label>
                     <div className='bg-white p-2.5 flex-1 border border-gray-300 rounded-lg focus-within:border-blue-500 transition-all'>
                         <select className='w-full outline-none bg-transparent text-sm text-gray-700 cursor-pointer'>
                             <option value="" disabled selected>اختر الفرقة</option>
@@ -88,7 +88,7 @@ export default function CreateStudent() {
 
                 <div className='flex flex-col items-center justify-center gap-2 text-gray-800'>
                     <p className='font-bold text-base text-blue-900'>سيتم إنشاء حساب تلقائيا للطالب</p>
-                    <div className='flex items-center justify-center gap-4 text-sm font-medium text-gray-700'>
+                    <div className='flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm font-medium text-gray-700 text-center'>
                         <p>اسم المستخدم: <span className='font-bold text-gray-900'>الرقم القومي</span></p>
                         <span className='w-0.5 h-4 bg-gray-400 inline-block'></span>
                         <p>كلمه المرور: <span className='font-bold text-gray-900'>كود الطالب</span></p>

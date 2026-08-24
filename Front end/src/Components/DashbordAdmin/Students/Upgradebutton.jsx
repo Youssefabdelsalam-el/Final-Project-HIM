@@ -14,7 +14,7 @@ export default function Upgradebutton() {
          ترقية الطلاب
     </button>
         <dialog id="my_modal_1" className="modal">
-            <div className="modal-box w-11/12 max-w-7xl min-h-175 flex flex-col gap-5 py-10">
+            <div className="modal-box w-11/12 max-w-7xl max-h-[90vh] overflow-y-auto flex flex-col gap-5 py-6 sm:py-10">
             <form method="dialog">
                 {/* if there is a button in form, it will close the modal */}
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -27,7 +27,7 @@ export default function Upgradebutton() {
             </h3>
              <p className="py-4">اختر الفرقة الحالية والفرقة التي سيتم ترقية الطالب اليها</p>
     
-            <div className='flex items-center gap-10'>
+            <div className='flex flex-col sm:flex-row items-stretch gap-5 sm:gap-10'>
                 <div className='flex flex-col gap-4'>
                 <label>من الفرقة (الفرقة الحالية) *</label>
                 <div className="relative w-full sm:w-48">
@@ -63,13 +63,13 @@ export default function Upgradebutton() {
             </div>
             </div>
     
-            <div className='flex items-center justify-between'>
+            <div className='flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4'>
             <div className='relative flex items-center bg-white p-2 w-full sm:w-80 md:w-96 border border-[#7e7c7c8c] rounded-3xl'>
-                <input className='w-full outline-none px-2 text-sm sm:text-base' type="text" placeholder="ابحث بالاسم او الكود الطالب او الرقم القومي" />
+                <input className='w-full outline-none px-2 text-sm sm:text-base' type="text" placeholder="ابحث عن الطالب" />
                 <FiSearch className='absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ' />
             </div>
                         
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-2 whitespace-nowrap'>
                 <p>تحديد الكل</p>
                 <p>(200)</p>
                 <input className='w-5 h-5' type="checkbox" name="" id="" />
@@ -127,8 +127,8 @@ export default function Upgradebutton() {
                 </table>
             </div>
     
-                <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-4'>
+                <div className='flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-4'>
+                    <div className='flex flex-wrap items-center gap-3'>
                         <button className='flex items-center gap-1 p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-900 cursor-pointer'>
                          تأكيد ترقية
                          <p>(190)</p>

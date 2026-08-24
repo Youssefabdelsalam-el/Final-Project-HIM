@@ -3,10 +3,10 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
 export default function Filter({name,Opt1,Opt2,Opt3,Opt4}) {
   return (
-    <div className='flex items-center gap-4'>
+    <div className='flex items-center justify-between gap-3 w-full md:w-auto'>
         <h1 className='whitespace-nowrap'>{name}</h1>
                    
-            <div className="relative w-full sm:w-48">
+            <div className="relative w-full md:w-48">
                 <select className=" appearance-none w-full h-7 bg-white border border-[#E4EAF3] rounded-2xl px-3 sm:px-4 pl-9 sm:pl-10 text-[#0B1F4D] font-semibold text-sm shadow-sm outline-none cursor-pointer" >
                     <option>{name}</option>
                     <option>{Opt1}</option>

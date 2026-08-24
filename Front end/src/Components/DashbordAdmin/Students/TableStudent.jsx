@@ -15,8 +15,8 @@ export default function TableStudent() {
             <p>4350</p>
             <p>طالب</p>
         </div>
-        <div className="overflow-x-auto p-2 ">
-            <table className="table">
+        <div className="w-full overflow-x-auto p-2">
+            <table className="table min-w-225">
                 {/* head */}
                 <thead className='bg-gray-300 text-black'>
                 <tr className='text-[18px]'>
@@ -39,7 +39,7 @@ export default function TableStudent() {
                     <td>نظم المعلومات الأعمال</td>
                     <td>الفرقة الثالثة</td>
                     <td>
-                        <div className='flex items-center gap-3'>
+                        <div className='flex items-center gap-2 sm:gap-3 whitespace-nowrap'>
                            <StudentDetailsModal/>
 
                            <EditStudentModal/>
@@ -123,12 +123,11 @@ export default function TableStudent() {
             </table>
         </div>
 
-        <div className="join flex items-center gap-2 justify-center">
+        <div className="flex items-center gap-2 justify-center">
            <button className='border border-gray-300 p-2 text-blue-600 rounded-2xl hover:bg-gray-200 cursor-pointer'>
             <IoIosArrowForward className='w-4 h-4' />
            </button>
-            <input className="join-item btn btn-square" type="radio" name="options" aria-label="5" />
-            <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+            
             <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
             <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
             <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked="checked" />

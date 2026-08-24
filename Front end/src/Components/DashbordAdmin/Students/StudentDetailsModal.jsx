@@ -9,7 +9,7 @@ export default function StudentDetailsModal() {
             <IoEyeOutline className='w-6 h-6' />
         </button>
         <dialog id="my_modal_4" className="modal" dir="rtl">
-    <div className="modal-box w-11/12 max-w-lg p-6 bg-white rounded-2xl shadow-xl flex flex-col gap-5">
+    <div className="modal-box w-11/12 sm:w-10/12 md:w-8/12 max-w-4xl min-h-110 flex flex-col gap-5 py-6 sm:py-10">
         
         <form method="dialog">
             <button className="btn btn-sm btn-circle btn-ghost absolute left-3 top-3 text-gray-400 hover:bg-gray-100 transition-colors">✕</button>
@@ -22,29 +22,29 @@ export default function StudentDetailsModal() {
 
         <div className='flex flex-col gap-4 bg-gray-50/60 p-4 rounded-xl border border-gray-100'>
             
-            <div className='flex items-center justify-between text-sm py-1 border-b border-gray-200/60 last:border-0'>
-                <span className='font-semibold text-gray-500 w-1/3'>الاسم كامل</span>
-                <span className='font-bold text-gray-800 w-2/3 text-left dir-rtl'>يوسف عبد السلام مصطفي السمان</span>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm py-2 border-b border-gray-200/60 last:border-0'>
+                <span className='font-semibold text-gray-500 sm:w-1/3 shrink-0'>الاسم كامل</span>
+                <span className='font-bold text-gray-800 sm:w-2/3 wrap-break-words'>يوسف عبد السلام مصطفي السمان</span>
             </div>
 
-            <div className='flex items-center justify-between text-sm py-1 border-b border-gray-200/60 last:border-0'>
-                <span className='font-semibold text-gray-500 w-1/3'>كود الطالب</span>
-                <span className='font-bold text-gray-800 w-2/3 text-left dir-rtl'>537573547</span>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm py-2 border-b border-gray-200/60 last:border-0'>
+                <span className='font-semibold text-gray-500 sm:w-1/3 shrink-0'>كود الطالب</span>
+                <span className='font-bold text-gray-800 sm:w-2/3 wrap-break-words'>537573547</span>
             </div>
 
-            <div className='flex items-center justify-between text-sm py-1 border-b border-gray-200/60 last:border-0'>
-                <span className='font-semibold text-gray-500 w-1/3'>الرقم القومي</span>
-                <span className='font-bold text-gray-800 w-2/3 text-left dir-rtl'>30653794645</span>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm py-2 border-b border-gray-200/60 last:border-0'>
+                <span className='font-semibold text-gray-500 sm:w-1/3 shrink-0'>الرقم القومي</span>
+                <span className='font-bold text-gray-800 sm:w-2/3 wrap-break-words'>30653794645</span>
             </div>
 
-            <div className='flex items-center justify-between text-sm py-1 border-b border-gray-200/60 last:border-0'>
-                <span className='font-semibold text-gray-500 w-1/3'>التخصص</span>
-                <span className='font-bold text-gray-800 w-2/3 text-left dir-rtl'>نظم ومعلومات الأعمال</span>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm py-2 border-b border-gray-200/60 last:border-0'>
+                <span className='font-semibold text-gray-500 sm:w-1/3 shrink-0'>التخصص</span>
+                <span className='font-bold text-gray-800 sm:w-2/3 wrap-break-words'>نظم ومعلومات الأعمال</span>
             </div>
 
-            <div className='flex items-center justify-between text-sm py-1 border-b border-gray-200/60 last:border-0'>
-                <span className='font-semibold text-gray-500 w-1/3'>الفرقة</span>
-                <span className='font-bold text-gray-800 w-2/3 text-left dir-rtl'>الفرقة الثالثة</span>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm py-2 border-b border-gray-200/60 last:border-0'>
+                <span className='font-semibold text-gray-500 sm:w-1/3 shrink-0'>الفرقة</span>
+                <span className='font-bold text-gray-800 sm:w-2/3 wrap-break-words'>الفرقة الثالثة</span>
             </div>
 
         </div>
