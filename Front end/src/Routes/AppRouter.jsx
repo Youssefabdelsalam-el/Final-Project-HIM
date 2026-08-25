@@ -3,7 +3,6 @@ import Mainlayout from '../Layout/Mainlayout'
 import HomePage from "../Pages/HomePage";
 import Aboutpage from "../Pages/Aboutpage";
 import LoginPage from "../Pages/LoginPage";
-import DashbordStoudentPage from "../Pages/DashbordStoudentPage";
 import Home from "../Components/DashbordStudent/Home";
 import Profile from "../Components/DashbordStudent/Profile";
 import MainIngredient from "../Components/DashbordStudent/MainIngredient";
@@ -20,6 +19,7 @@ import HomeDoctor from "../Components/DashbordDoctor/Home/Home";
 import AdminDeawer from "../Components/DashbordAdmin/AdminDeawer";
 import HomeAdmin from "../Components/DashbordAdmin/Home/HomeAdmin";
 import Students from "../Components/DashbordAdmin/Students/Students";
+import Courses from "../Components/DashbordAdmin/Courses/Courses";
 
 export default function AppRouter() {
   return (
@@ -56,6 +56,7 @@ export default function AppRouter() {
       <Route path="Dashbord Admin" element={<AdminDeawer/>}>
       <Route index element={<HomeAdmin/>} />
       <Route path="Students" element={<Students/>} />
+      <Route path="Courses" element={<Courses/>} />
       
       </Route>
     </Routes>

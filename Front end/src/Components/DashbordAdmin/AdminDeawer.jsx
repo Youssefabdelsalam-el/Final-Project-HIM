@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
-import { CgProfile } from 'react-icons/cg'
-import { FaRegBell } from 'react-icons/fa'
+import { FaChalkboardTeacher, FaRegBell } from 'react-icons/fa'
+import { GoBook } from 'react-icons/go'
 import { PiStudentDuotone } from 'react-icons/pi'
 import { Link, Outlet } from 'react-router-dom'
 
@@ -85,6 +85,26 @@ export default function AdminDeawer() {
                 {/* Home icon */}
                 <PiStudentDuotone  className="my-1.5 inline-block size-4"  />
               <span className="is-drawer-close:hidden cursor-pointer"> الطلاب</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                {/* Home icon */}
+                <FaChalkboardTeacher  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> الدكاترة</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="Courses">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                {/* Home icon */}
+                <GoBook  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> المواد</span>
               </button>
               </Link>
             </li>
