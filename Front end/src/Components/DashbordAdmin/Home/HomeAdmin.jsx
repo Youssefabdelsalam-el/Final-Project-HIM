@@ -7,6 +7,7 @@ import { FaChalkboardTeacher } from 'react-icons/fa'
 import Chart from './Chart'
 import QuickActionCards from './QuickActionCards'
 import Advertisements from './Advertisements'
+import { IoMdHome } from 'react-icons/io'
 
 
 
@@ -16,6 +17,12 @@ export default function HomeAdmin() {
         <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 w-full'>
             {/* الترحيب */}
             <div className='Hello flex flex-col gap-2 min-w-0'>
+                 <div className='flex items-center gap-3'>
+                        <div className='text-blue-600 bg-blue-100 p-3 rounded-4xl'>
+                        <IoMdHome className='w-7 h-7' />
+                        </div>
+                        <h1 className='text-xl sm:text-2xl md:text-[25px] font-bold'>الرئيسية</h1>
+                    </div>
         
                 <div className='flex flex-wrap items-center gap-2 text-[25px] font-bold'>
                     <h1>مرحبا بك</h1>

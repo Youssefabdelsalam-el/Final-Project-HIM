@@ -1,17 +1,9 @@
 
-import { AiOutlineCamera, AiOutlineEdit } from 'react-icons/ai'
+import { AiOutlineCamera } from 'react-icons/ai'
 import { MdLocationPin, MdOutlinePerson, MdPeopleAlt } from 'react-icons/md'
-import React, { useState } from "react";
+import { useState } from "react";
 import CardProfile from './CardProfile';
-import { IoCalendarOutline, IoStatsChart, IoTimeOutline } from 'react-icons/io5'
-import { FiBookOpen } from 'react-icons/fi';
-import { TiStarOutline } from 'react-icons/ti';
-import { ImProfile } from 'react-icons/im';
-import { LuChartSpline, LuPenLine } from 'react-icons/lu';
-import { GiGraduateCap } from 'react-icons/gi';
-import { IoIosLock, IoMdMailUnread } from 'react-icons/io';
-import { TbPointFilled } from 'react-icons/tb';
-import {PieChart,Pie,Cell,ResponsiveContainer} from "recharts";
+import { IoMdMailUnread } from 'react-icons/io';
 import { FaCalendarMinus, FaGraduationCap, FaIdCard } from 'react-icons/fa';
 import { FaPhoneFlip } from 'react-icons/fa6';
 export default function Profile() {

@@ -24,7 +24,7 @@ export default function ClassSchedule() {
         <div className='flex items-center gap-5 justify-center'>
             <Selecter title="اختر التخصص" optiontitle="تخصص" option1="تخصص عام" option2="نظم ومعلومات الاعمال" option3="المحاسبه والمراجعة" option4="ادارة اعمال"/>
             <Selecter title="اختر الفرقة" optiontitle="الفرقة" option1="الاولي" option2="الثانية" option3="الثالثة" option4="الرابعة"/>
-            <Selecter title="اختر الجروب" optiontitle="الجروب" option1="الاول" option2="الثاني" option3="الثالث" option4="الرابع"/>
+            <Selecter title="اختر الجروب" optiontitle="الجروب" option1="الجروب A" option2="الجروب B" option3="الجروب C" option4="الجروب D"/>
             <Selecter title="الترم" optiontitle="الترم الحالي" option1="الترم الاول" option2="الترم الثاني" />
         </div>
 

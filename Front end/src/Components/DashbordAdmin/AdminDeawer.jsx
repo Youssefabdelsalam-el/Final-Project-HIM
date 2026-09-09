@@ -1,7 +1,11 @@
 import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
+import { CiSettings } from 'react-icons/ci'
 import { FaChalkboardTeacher, FaRegBell } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
+import { IoCalendarOutline, IoMegaphoneOutline } from 'react-icons/io5'
+import { LuMessageSquareText } from 'react-icons/lu'
+import { MdStackedBarChart } from 'react-icons/md'
 import { PiStudentDuotone } from 'react-icons/pi'
 import { Link, Outlet } from 'react-router-dom'
 
@@ -105,6 +109,52 @@ export default function AdminDeawer() {
                 {/* Home icon */}
                 <GoBook  className="my-1.5 inline-block size-4"  />
               <span className="is-drawer-close:hidden cursor-pointer"> المواد</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="ClassSchedules">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                {/* Home icon */}
+                <IoCalendarOutline  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> الجدول الدراسية</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="Grades">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                {/* Home icon */}
+                <MdStackedBarChart  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer">الدرجات</span>
+              </button>
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="AdvertisementAdmin">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                <IoMegaphoneOutline  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> الأعلانات</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="RequestsAndComplaints">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                <LuMessageSquareText  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> الطلبات والشكاوي</span>
+              </button>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="hover:bg-[#041c50] hover:text-white active:bg-[#002079]" to="SettingAdmin">
+                <button className='flex items-center gap-2' data-tip="Homepage">
+                <CiSettings  className="my-1.5 inline-block size-4"  />
+              <span className="is-drawer-close:hidden cursor-pointer"> الاعدادت</span>
               </button>
               </Link>
             </li>

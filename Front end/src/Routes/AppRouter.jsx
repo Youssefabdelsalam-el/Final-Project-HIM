@@ -15,11 +15,20 @@ import AttendanceTracker from "../Components/DashbordStudent/AttendanceTracker/A
 import ClassSchedule from "../Components/DashbordStudent/ClassSchedule/ClassSchedule";
 import Tests from "../Components/DashbordStudent/Tests/Tests";
 import DoctorDrawer from "../Components/DashbordDoctor/DoctorDrawer";
-import HomeDoctor from "../Components/DashbordDoctor/Home/Home";
 import AdminDeawer from "../Components/DashbordAdmin/AdminDeawer";
 import HomeAdmin from "../Components/DashbordAdmin/Home/HomeAdmin";
 import Students from "../Components/DashbordAdmin/Students/Students";
 import Courses from "../Components/DashbordAdmin/Courses/Courses";
+import ClassSchedules from "../Components/DashbordAdmin/ClassSchedules/ClassSchedules";
+import Grades from "../Components/DashbordAdmin/Grades/Grades";
+import AdvertisementAdmin from "../Components/DashbordAdmin/AdvertisementAdmin/AdvertisementAdmin";
+import RequestsAndComplaints from "../Components/DashbordAdmin/RequestsAndComplaints/RequestsAndComplaints";
+import SettingAdmin from "../Components/DashbordAdmin/settingAdmin/SettingAdmin";
+import MyCoursesPage from "../Components/DashbordDoctor/MyCoursesPage/MyCoursesPage";
+import CourseDetails from "../Components/DashbordDoctor/MyCoursesPage/CourseDetails";
+
+import ExamDetails from "../Components/DashbordDoctor/MyCoursesPage/ContentExams/ExamDetailsPage/ExamDetails";
+import AssignmentSubmissionspage from "../Components/DashbordDoctor/MyCoursesPage/ContentAssignments/AssignmentSubmissionspage";
 
 export default function AppRouter() {
   return (
@@ -45,9 +54,10 @@ export default function AppRouter() {
       </Route>
 
       <Route path="Dashbord Doctor" element={<DoctorDrawer/>}>
-      <Route index element={<HomeDoctor/>} />
-      {/* <Route path="" element={} />
-      <Route path="" element={} /> */}
+      <Route index element={<MyCoursesPage/>} />
+      <Route path="CourseDetails" element={<CourseDetails/>} />
+      <Route path="AssignmentSubmissions/:assignmentId" element={<AssignmentSubmissionspage/>} />
+      <Route path="ExamDetails/:examId" element={<ExamDetails />} />
       
       </Route>
 
@@ -56,7 +66,13 @@ export default function AppRouter() {
       <Route path="Dashbord Admin" element={<AdminDeawer/>}>
       <Route index element={<HomeAdmin/>} />
       <Route path="Students" element={<Students/>} />
+      {/* <Route path="Doctors" element={<Doctors/>} /> */}
       <Route path="Courses" element={<Courses/>} />
+      <Route path="ClassSchedules" element={<ClassSchedules/>}/>
+      <Route path="Grades" element={<Grades/>}/>
+      <Route path="AdvertisementAdmin" element={<AdvertisementAdmin/>}/>
+      <Route path="RequestsAndComplaints" element={<RequestsAndComplaints/>}/>
+      <Route path="SettingAdmin" element={<SettingAdmin/>}/>
       
       </Route>
     </Routes>

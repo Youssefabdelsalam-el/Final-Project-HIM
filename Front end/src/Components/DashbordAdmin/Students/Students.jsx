@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
-import { IoIosArrowBack, } from 'react-icons/io'
+import { IoIosArrowBack } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import SearchStudent from './SearchStudent'
 import Filter from './Filter'
@@ -8,6 +8,7 @@ import TableStudent from './TableStudent'
 import Upgradebutton from './Upgradebutton'
 import ImportStudentsButton from './ImportStudentsButton'
 import CreateStudent from './CreateStudent'
+import { PiStudentBold } from 'react-icons/pi'
 
 export default function Students() {
   return (
@@ -15,7 +16,12 @@ export default function Students() {
         <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 w-full'>
             {/* العنوان ولينك الانتقال */}
             <div className='flex flex-col gap-3 sm:gap-4 min-w-0'>
-                <h1 className='text-xl sm:text-2xl md:text-[25px] font-bold'>الطلاب</h1>
+                 <div className='flex items-center gap-3'>
+                        <div className='text-blue-600 bg-blue-100 p-3 rounded-4xl'>
+                        <PiStudentBold className='w-7 h-7' />
+                        </div>
+                        <h1 className='text-xl sm:text-2xl md:text-[25px] font-bold'>الطلاب</h1>
+                    </div>
                 <div className='flex flex-wrap items-center gap-2 sm:gap-4 text-sm sm:text-base text-gray-500'>
                     <AiOutlineHome className='text-blue-600 w-5 h-5' />
                     <IoIosArrowBack />

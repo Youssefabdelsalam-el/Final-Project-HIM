@@ -57,7 +57,6 @@ export default function CardCorses() {
 
                     <div className="flex flex-wrap gap-2">
                         <span className="font-semibold text-gray-800 bg-gray-50 px-3 py-1.5 rounded-lg">الأولى</span>
-                        <span className="font-semibold text-gray-800 bg-gray-50 px-3 py-1.5 rounded-lg">الثانية</span>
                     </div>
                 </div>
 
