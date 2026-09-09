@@ -26,6 +26,7 @@ export default function ContentExams() {
 
         <ExamsTable/>
         
+        
     </div>
   )
 }

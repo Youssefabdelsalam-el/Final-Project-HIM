@@ -29,6 +29,7 @@ import CourseDetails from "../Components/DashbordDoctor/MyCoursesPage/CourseDeta
 
 import ExamDetails from "../Components/DashbordDoctor/MyCoursesPage/ContentExams/ExamDetailsPage/ExamDetails";
 import AssignmentSubmissionspage from "../Components/DashbordDoctor/MyCoursesPage/ContentAssignments/AssignmentSubmissionspage";
+import ProfileDoctor from "../Components/DashbordDoctor/ProfileDoctor";
 
 export default function AppRouter() {
   return (
@@ -54,6 +55,7 @@ export default function AppRouter() {
       </Route>
 
       <Route path="Dashbord Doctor" element={<DoctorDrawer/>}>
+      <Route path="ProfileDoctor" element={<ProfileDoctor/>} />
       <Route index element={<MyCoursesPage/>} />
       <Route path="CourseDetails" element={<CourseDetails/>} />
       <Route path="AssignmentSubmissions/:assignmentId" element={<AssignmentSubmissionspage/>} />
